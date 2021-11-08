@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1031630218943",
+    "project_id": "kapalokombed-9f7d6",
+    "storage_bucket": "kapalokombed-9f7d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1031630218943:android:f0dac99652e7fdde07480a",
+        "android_client_info": {
+          "package_name": "com.example.kapalo_kombed"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1031630218943-49nv3veemorurjl7v3llo6a69r3lnk73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGge06-i3iTX0Hsi7Ni6euhfAaXpFRjsc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1031630218943-49nv3veemorurjl7v3llo6a69r3lnk73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
