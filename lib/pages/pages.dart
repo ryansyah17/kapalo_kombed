@@ -4,9 +4,9 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:get/get.dart';
+
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
-import 'package:get/get_rx/src/rx_types/rx_types.dart';
+
 import 'package:google_fonts/google_fonts.dart';
 import 'package:kapalo_kombed/model/models.dart';
 import 'package:kapalo_kombed/shared/shared.dart';
@@ -25,3 +25,9 @@ part 'shoes_page.dart';
 part 'bracelet_page.dart';
 part 'shopping_cart.dart';
 part 'splash_page.dart';
+part 'category_page.dart';
+part 'tshirt_cate_page.dart';
+part 'hoodie_cate_page.dart';
+part 'crewneck_cate_page.dart';
+part 'shoes_cate_page.dart';
+part 'bracelet_cate_page.dart';

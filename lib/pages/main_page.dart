@@ -69,10 +69,7 @@ class _MainPageState extends State<MainPage> {
               },
               children: [
                 Center(child: HomePage()),
-                Center(
-                    child: Container(
-                  color: Colors.red,
-                )),
+                Center(child: CategoryPage()),
                 Center(
                     child: Container(
                   color: Colors.blue,

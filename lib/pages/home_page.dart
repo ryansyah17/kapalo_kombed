@@ -105,9 +105,7 @@ class _HomePageState extends State<HomePage> {
                             ],
                           ),
                           GestureDetector(
-                            onTap: () {
-                             
-                            },
+                            onTap: () {},
                             child: Container(
                               width: MediaQuery.of(context).size.width / 2.2,
                               height: 50,
@@ -245,13 +243,14 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                       Spacer(),
                                       Container(
-                                          child: Text(
-                                        'See All',
-                                        style: GoogleFonts.poppins(
-                                            fontSize: 18,
-                                            decoration:
-                                                TextDecoration.underline),
-                                      ))
+                                        child: Text(
+                                          'See All',
+                                          style: GoogleFonts.poppins(
+                                              fontSize: 18,
+                                              decoration:
+                                                  TextDecoration.underline),
+                                        ),
+                                      ),
                                     ],
                                   ),
                                 ),
@@ -259,10 +258,6 @@ class _HomePageState extends State<HomePage> {
                                     margin: EdgeInsets.only(
                                       top: 10,
                                     ),
-                                    decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius: BorderRadius.circular(8)),
-                                    width: 375,
                                     child: (selectedIndex == 0)
                                         ? TshirtPage()
                                         : (selectedIndex == 1)

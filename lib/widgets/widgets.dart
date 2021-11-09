@@ -14,3 +14,6 @@ part 'navbar.dart';
 part 'custom_tabbar.dart';
 part 'navbar_bottom.dart';
 part 'card_tshirt_page.dart';
+part 'custom_tabbar_cate.dart';
+part 'grid_view_card.dart';
+part 'custom_tab.dart';
