@@ -1,33 +1,179 @@
 part of 'pages.dart';
 
-class TshirtCatePage extends StatefulWidget {
-  const TshirtCatePage({Key? key}) : super(key: key);
-
-  @override
-  State<TshirtCatePage> createState() => _TshirtCatePageState();
-}
-
-class _TshirtCatePageState extends State<TshirtCatePage> {
+class TshirtCatePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Column(
-      children: [
-        Container(
-          child: GridView.builder(
-            shrinkWrap: true,
-            itemCount: mockTShirt.length,
-            gridDelegate: SliverGridDelegateWithMaxCrossAxisExtent(
-              maxCrossAxisExtent: 500 / 2,
-              childAspectRatio: 0.75,
+    return SingleChildScrollView(
+      child: Container(
+        margin: EdgeInsets.only(left: 15, right: 15),
+        child: Column(
+          children: [
+            Container(
+              margin: EdgeInsets.only(
+                top: 8,
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    child: Text(
+                      'O-Neck',
+                      style:
+                          GoogleFonts.poppins(fontSize: 18, color: Colors.grey),
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    child: Text(
+                      'See All',
+                      style: GoogleFonts.poppins(
+                          fontSize: 18, decoration: TextDecoration.underline),
+                    ),
+                  ),
+                ],
+              ),
             ),
-            physics: NeverScrollableScrollPhysics(),
-            scrollDirection: Axis.vertical,
-            itemBuilder: (context, index) {
-              return GridViewCard(product: mockTShirt[index]);
-            },
-          ),
+            Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: mockTShirt.map((e) => GridViewCard(e)).toList(),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                top: 8,
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    child: Text(
+                      'V-Neck',
+                      style:
+                          GoogleFonts.poppins(fontSize: 18, color: Colors.grey),
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    child: Text(
+                      'See All',
+                      style: GoogleFonts.poppins(
+                          fontSize: 18, decoration: TextDecoration.underline),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: mockTShirt.map((e) => GridViewCard(e)).toList(),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                top: 8,
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    child: Text(
+                      'OverSize',
+                      style:
+                          GoogleFonts.poppins(fontSize: 18, color: Colors.grey),
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    child: Text(
+                      'See All',
+                      style: GoogleFonts.poppins(
+                          fontSize: 18, decoration: TextDecoration.underline),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: mockTShirt.map((e) => GridViewCard(e)).toList(),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                top: 8,
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    child: Text(
+                      'Polo',
+                      style:
+                          GoogleFonts.poppins(fontSize: 18, color: Colors.grey),
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    child: Text(
+                      'See All',
+                      style: GoogleFonts.poppins(
+                          fontSize: 18, decoration: TextDecoration.underline),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: mockTShirt.map((e) => GridViewCard(e)).toList(),
+                ),
+              ),
+            ),
+            Container(
+              margin: EdgeInsets.only(
+                top: 8,
+              ),
+              child: Row(
+                children: [
+                  Container(
+                    child: Text(
+                      'TurtleNeck',
+                      style:
+                          GoogleFonts.poppins(fontSize: 18, color: Colors.grey),
+                    ),
+                  ),
+                  Spacer(),
+                  Container(
+                    child: Text(
+                      'See All',
+                      style: GoogleFonts.poppins(
+                          fontSize: 18, decoration: TextDecoration.underline),
+                    ),
+                  ),
+                ],
+              ),
+            ),
+            Container(
+              child: SingleChildScrollView(
+                scrollDirection: Axis.horizontal,
+                child: Row(
+                  children: mockTShirt.map((e) => GridViewCard(e)).toList(),
+                ),
+              ),
+            ),
+            SizedBox(
+              height: 20,
+            )
+          ],
         ),
-      ],
+      ),
     );
   }
 }

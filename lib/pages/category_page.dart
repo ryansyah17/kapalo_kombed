@@ -49,7 +49,7 @@ class _CategoryPageState extends State<CategoryPage> {
                   child: CustomTabBarCate(
                     titles: [
                       'T-Shirt',
-                      'Hoodie',
+                      'Jacket',
                       'Crewneck',
                       'Shoes',
                       'Bracelet',

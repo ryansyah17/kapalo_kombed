@@ -217,7 +217,7 @@ class _HomePageState extends State<HomePage> {
                                 CustomTabBar(
                                   titles: [
                                     'T-Shirt',
-                                    'Hoodie',
+                                    'Jacket',
                                     'Crewneck',
                                     'Shoes',
                                     'Bracelet',
